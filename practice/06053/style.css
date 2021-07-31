@@ -1,0 +1,23 @@
+h1{
+    color: rgb(185,88,88);
+    text-align: center;
+
+}
+
+h2{
+    color: rgb(92,84,202);
+}
+
+p{
+    text-align: justify;
+    line-height: 2.0;
+}
+
+blockquote{
+    text-align: justify;
+    line-height: 1.3;
+}
+
+ol{
+    list-style-image: ;
+}
