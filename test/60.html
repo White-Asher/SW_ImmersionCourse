@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <script>
+        var num1 = parseInt(prompt("첫 번째 숫자를 입력하세요."));
+        var num2 = parseInt(prompt("두 번째 숫자를 입력하세요."));
+        var isNull = (num1 == null) || (num2 == null);
+        if (!isNull) {
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            var isNan = isNaN(num1) || isNaN(num2);
+            if (!isNan) {
+                if (num1 > num2) {
+                    document.write("첫 번째 수가 더 큽니다.");
+                }
+                else if (num1 < num2) {
+                    document.write("두 번째 수가 더 큽니다.");
+                }
+                else {
+                    document.write("두 수는 같습니다");
+                }
+
+            }
+            else {
+                document.write("숫자 형식으로 입력해야 합니다");
+            }
+
+        }
+        else {
+            document.write("값을 입력해 주세요");
+        }
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

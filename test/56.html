@@ -1,0 +1,38 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        function writeMessage() {
+            document.getElementById("message").innerText = "Hello world";
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="message"></p>
+    <input type="button" value="Click me" onclick="writeMessage();">
+</body>
+</html>
+스크립트는 브라우저에 붙어서? 동작한다. 뭔소리지 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- var은 전역변수 인가 보다... -->
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        var count = 0;
+        
+        function writeMessage() {
+            document.getElementById("message").innerText = (++count+"번 누르셨습니다");
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="message"></p>
+    <input type="button" value="Click me" onclick="writeMessage();">
+</body>
+</html>
+<!-- 스크립트는 브라우저에 붙어서? 동작한다. 뭔소리지 -->

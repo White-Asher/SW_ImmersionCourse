@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var num = 0;
+        do {
+            num = parseInt(prompt("출력할 구구단의 숫자를 입력하세요 종료 0"));
+            if (num === 0) {
+                alert("종료합니다.");
+                break;
+            }
+            if (isNaN(num)) {
+                alert("숫자를 입력해야 합니다.");
+                continue;
+            }
+            document.write("<div>");
+
+            for (var i = 1; i <= 9; i++) {
+                document.write(num + "*" + i + "=" + (num * i) + "<br>");
+            }
+            document.write("<div>");
+        } while(true);
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="result">0</div>
+</body>
+</html>

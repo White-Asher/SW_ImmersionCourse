@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div{
+            display: inline-block;
+            color: white;
+            background-color: blue;
+            font-size: x-small;
+            width: 100px;
+            height: 100px;
+            transition-property: height;
+            transition-duration: 2s;
+            text-align: center;
+        }
+
+        div:hover{
+            width: 100px;
+            height: 300px;
+        }
+        
+        #ease{transition-timing-function: ease;}
+        #linear{transition-timing-function: linear;}
+        #ease-in{transition-timing-function: ease-in;}
+        #ease-out{transition-timing-function: ease-out;}
+        #ease-in-out{transition-timing-function: ease-in-out;}
+        #cubic-bezier{transition-timing-function: cubic-bezier(1,2,5,10);}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="ease">ease</div>
+    <div id="linear">linear</div>
+    <div id="ease-in">ease-in</div>
+    <div id="ease-out">ease-out</div>
+    <div id="ease-in-out">ease-in-out</div>
+    <div id="cubic-bezier">cubic-bezier</div>
+</body>
+</html>
