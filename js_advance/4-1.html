@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <label for="checkM">남</label>
+    <input id="checkM" type="checkbox" value="M">
+    <label for="checkF">여</label>
+    <input id="checkF" type="checkbox" value="F">
+    <button type="button" onclick="submit()">전송</button>
+    <script>
+        function submit(){
+            var checkM = document.getElementById('checkM');
+            var checkF = document.getElementById('checkF');
+
+            console.log(checkM.checked, checkF.checked);
+
+            if(checkM.checked != checkF.checked){
+
+                if(checkM.checked == true){
+                    alert('남자를 선택하였습니다');
+                }
+                if(checkF.checked == true){
+                    alert('여자를 선택하였습니다');
+                }
+            }
+            else{
+                alert('성별은 하나만 선택할 수 있습니다.')
+            }
+            
+        }
+    </script>
+</body>
+</html>
