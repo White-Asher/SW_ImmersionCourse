@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <div id="box"></div>
+    <script>
+        var el = document.getElementById("box");
+        var btn = document.getElementById("btn");
+        var toggle = ( function() {
+            var cnt =0;
+            return function(){
+                el.innerTEXT = ++cnt;
+            };
+        } () );
+
+        btn.onclick = toggle;
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var num = 100;
+        var arr = [1,2,3];
+
+        function func1(num) {
+            num = 101;
+        }
+
+        function func2(arr){
+            arr[0] = 100;
+        }
+
+        func1(num);
+        func2(arr);
+
+        console.log(num);
+        console.log(arr);
+    </script>
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>

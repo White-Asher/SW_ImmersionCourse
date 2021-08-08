@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- <style>
+        .red{color:#ff0000;}
+        .blue{color:#0000ff;}
+        .blod{font-size: bold;}
+    </style> -->
+</head>
+<body>
+    <div>
+        <h1>city</h1>
+        <ul>
+            <li id="one" class="red bold">seoul</li>
+            <li id="two" class="blue">London</li>
+            <li id="three" class="red">Newyork</li>
+            <li id="four">Tokyo</li>
+        </ul>
+    </div>
+    <script>
+      const pEl=document.createElement('p');
+      const textEl = document.createTextNode('Hello world');
+      pEl.appendChild(textEl);
+
+      const el = document.querySelector('div');
+      el.appendChild(pEl);
+
+    </script>
+</body>
+</html>

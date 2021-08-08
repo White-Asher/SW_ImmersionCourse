@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            font-size: 1vm;
+        }
+    </style>
+    <script>
+        var box = document.querySelector(".box");
+        box.onmouseover = function(){
+            box.innerText = "마우스 포인터 들어감";
+        };
+        box.onmouseout = function(){
+            box.innerText = "마우스 포인터 나감";
+        };
+    </script>
+</head>
+<body>
+    <div class="box">
+        마우스를 올려보세요.
+    </div>
+</body>
+</html>

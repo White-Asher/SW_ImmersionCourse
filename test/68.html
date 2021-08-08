@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var emptyObj={};
+        console.log(typeof emptyObj);
+
+        var person = {
+            name: "kim",
+            sayHello: function(){
+                console.log("hello, my name is " + this.name);
+            }
+        };
+
+        console.log(typeof person);
+        console.log(person);
+
+        person.sayHello();
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
