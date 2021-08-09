@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">   
+</head>
+<body>
+    <script>
+        function outerFunc(){
+        var x = 10;
+
+        var innerFunc = function() {
+            x++;
+            console.log(x);
+        }
+        return innerFunc;
+    }
+    var inner = outerFunc();
+    inner();
+    inner();
+    </script>
+</body>
+</html>

@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    
-    <title>Document</title>
 </head>
 <body>
     <button id="btn">Click me</button>
@@ -12,9 +10,9 @@
         var el = document.getElementById("box");
         var btn = document.getElementById("btn");
         var toggle = ( function() {
-            var cnt =0;
+            var cnt = 0;
             return function(){
-                el.innerTEXT = ++cnt;
+                el.innerText = ++cnt;
             };
         } () );
 

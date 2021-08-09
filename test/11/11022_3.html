@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <script>
-        function func(a, b = 20, c = 'test'){
-            console.log(a + b + c);
+        var x = 10;
+        function foo(){
+            x = 100;
+            console.log(x);
         }
-        func(5, 10, 15);
-        func(5, 10);
-        func(5);
+
+        foo();
+        console.log(x);
     </script>
     <title>Document</title>
 </head>

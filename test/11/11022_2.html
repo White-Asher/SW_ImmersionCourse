@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var x = 'global';
+
+function foo(){
+	var x = 'local';
+    console.log(x);
+    
+    function bar() {
+    console.log(x);
+    }
+    
+    bar();
+ }
+ 
+ foo();
+ console.log(x);
+    </script>
+    <title>Document</title>
+</head>
+<body>
+</body>
+</html>
