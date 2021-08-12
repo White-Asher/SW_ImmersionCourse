@@ -1,0 +1,9 @@
+GET http://localhost:8090/avg?avg01=1&avg02=1&avg03=4&avg04=5&avg05=10
+
+GET http://localhost:8090/echo?msg=nodejs&title=hello
+
+GET http://localhost:8090/sum?a=1&b=2
+
+GET http://localhost:8090/sub?a=1&b=2
+
+GET http://localhost:8090/avg?avg01=1&avg02=1&avg03=4&avg04=5&avg05=10
