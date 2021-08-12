@@ -1,4 +1,4 @@
-_ex01\_lib.js _
+_ex01\_lib.js_
 
 ```
 function bad_func1(){
@@ -156,13 +156,13 @@ libObj.foo2()
 console.log(libObj);
 ```
 
-_package.json _을 다음과 같이 변경하고
+package.json을 다음과 같이 변경하고
 
 ```
 "type" : "commonjs",
 ```
 
-_2\_import.js _을 다음과 같이 수정함.
+2\_import.js을 다음과 같이 수정함.
 
 ```
 function importantFunc1(){
