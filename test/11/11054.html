@@ -1,33 +1,19 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
     <meta charset="UTF-8">
-    <style>
-        .red{color:#ff0000;}
-        .blue{color:#0000ff;}
-        .blod{font-size: bold;}
-    </style>
+    <script>
+        var a = 1;
+        var b = a;
+
+        console.log(a,b);
+        console.log(a === b);
+
+        a = 10;
+        console.log(a,b);
+        console.log(a === b);
+    </script>   
 </head>
 <body>
-    <div>
-        <h1>city</h1>
-        <ul>
-            <li id="one" class="red bold">seoul</li>
-            <li id="two" class="blue">London</li>
-            <li id="three" class="red">Newyork</li>
-            <li id="four">Tokyo</li>
-        </ul>
-    </div>
-    <script>
-        const el = document.querySelector('ul');
-        el.setAttribute('style','list-style: none;')
-
-        for(let i=0; i<el.childNodes.length;i++){
-            if(el.children[i].hasAttribute('class')){
-                el.children[i].removeAttribute('class');
-            }
-        }
-
-    </script>
 </body>
 </html>

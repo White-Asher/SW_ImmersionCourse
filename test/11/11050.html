@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        var person = {
+            name: "JY",
+            sayHello: function() {
+                console.log("hello, my name is " + this.name);
+            }
+        };
+        delete person.name;        
+        person.sayHello();
+
+    </script>   
+</head>
+<body>
+</body>
+</html>
