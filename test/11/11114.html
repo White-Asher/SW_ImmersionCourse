@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    
-    <title>Document</title>
 </head>
 <body>
+    <button ibclick="moveWindow()">창 이동</button>
     <script>
-        const contextMenuHandler =(evt) =>{
-            alert('우클릭 금지');
-            evt.preventDefault();
+        let moveWindow = function(){
+            let x = Math.ceil((Math.random() * 1000));
+            let y = Math.ceil((Math.random() * 500));
+            console.log(x,y);
+            window.moveTo(x,y);
         }
-        document.addEventListener('contextmenu', contextMenuHandler);
     </script>
 </body>
 </html>

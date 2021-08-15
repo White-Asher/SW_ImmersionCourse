@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let dayToKor = function(day){
+            switch(day) {
+                case 0:
+                    return '일';
+                case 1:
+                    return '월';
+                case 2:
+                    return '화';
+                case 3:
+                    return '수';
+                case 4:
+                    return '목';
+                case 5:
+                    return '금';
+                case 6:
+                    return '토';
+            }
+        }
+        let date = new Date();
+        console.log(date);
+
+        const today = date.getFullYear() + "/"
+        + (date.getMonth()) + "/"
+        + date.getDate() + "("
+        + dayToKor(date.getDay()) + ")"
+        + date.getHours() + ":"
+        + date.getMinutes();
+        
+        console.log(today);
+    </script>
+</head>
+<body>
+</body>
+</html>

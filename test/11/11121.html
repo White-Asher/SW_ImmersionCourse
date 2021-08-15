@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWindow()">창 열기</button>
+    <script>
+        let openWindow = function(){
+            let left = (screen.availWidth /2)- 100;
+            let top = (screen.availHeight /2)- 100;
+            let childWindow = window.open('https://www.tistory.com/','',
+            'width=300, height=200, left='+left+',top='+top);
+        }
+    </script>
+</body>
+</html>

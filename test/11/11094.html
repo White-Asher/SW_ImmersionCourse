@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str1 = '1234567890';
+        const str2 = '04312abcde';
+        const str3 = 'a1b2c3d4e5';
+
+        const regExp1 = /[0-9]+/;
+        const regExp2 = /[a-z][0-9]/;
+        
+        console.log(regExp1.exec(str1));
+        console.log(regExp1.exec(str2));
+        console.log(regExp1.exec(str3));
+
+        console.log(regExp2.exec(str1));
+        console.log(regExp2.exec(str2));
+        console.log(regExp2.exec(str3));
+        
+    </script>
+</body>
+</html>

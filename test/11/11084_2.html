@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        let telChecker = function(str){
+            if(str.length != 11)
+                return false;
+
+            const regExp = /[0-9]+$/;
+            return regExp.test(str);
+        }
+    </script>
+</body>
+</html>

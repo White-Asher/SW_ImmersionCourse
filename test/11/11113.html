@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
     <meta charset="UTF-8">
-    
-    <title>Document</title>
 </head>
 <body>
-    <a href = "https://www.naver.com">이동</a>
-    <form action="http://www.daum.net">
-        <input type="text">
-        <button type="reset">취소</button>
-        <button type="submit">전송</button>
-    </form>
+    <body>
+        <button onclick="openwindow1()">창 열기1</button>
+        <button onclick="openwindow2()">창 열기2</button>
+        <button onclick="openwindow3()">창 열기3</button>
+        <script>
+            let openwindow1 = function(){
+                let childWindow = window.open('http://www.naver.com', '','');
+            }
 
-    <script>
-        const handler = () =>{
-            alert('폼에 이벤트 발생');
-            evt.preventDefault();
-        }
-
-        document.querySelector('a').addEventListener('click',handler);
-        document.querySelector('form').addEventListener('submit',handler);
-        document.querySelector('form').addEventListener('reset',handler);
-    </script>
+            let openWindow2 = function(){
+                let childWindow = window.open('http://www.naver.com', '','width=200, height=200');
+            }
+            
+            let openWindow3 = function(){
+                let childWindow = window.open('http://www.naver.com', '',
+                'width=200, height=200 m ,menubar = mo, toolbar=no, location=no');
+            }
+        </script>
+    </body>
 </body>
 </html>

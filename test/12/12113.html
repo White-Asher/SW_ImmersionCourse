@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <a href = "https://www.naver.com">이동</a>
+    <form action="http://www.daum.net">
+        <input type="text">
+        <button type="reset">취소</button>
+        <button type="submit">전송</button>
+    </form>
+
+    <script>
+        const handler = () =>{
+            alert('폼에 이벤트 발생');
+            evt.preventDefault();
+        }
+
+        document.querySelector('a').addEventListener('click',handler);
+        document.querySelector('form').addEventListener('submit',handler);
+        document.querySelector('form').addEventListener('reset',handler);
+    </script>
+</body>
+</html>

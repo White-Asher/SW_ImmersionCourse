@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str1 = '123456';
+        const str2 = 'abcdef';
+        const str3 = '가나다라마바';
+        const str4 = 'a123456b^';
+
+        const regExp1 = /\d/g;
+        const regExp2 = /\D/g;
+        const regExp3 = /\^/g;
+        
+        console.log(regExp1.exec(str1));
+        console.log(regExp1.exec(str2));
+        console.log(regExp1.exec(str3));
+        console.log(regExp1.exec(str4));
+
+        console.log(regExp2.exec(str1));
+        console.log(regExp2.exec(str2));
+        console.log(regExp2.exec(str3));
+        console.log(regExp2.exec(str4));
+
+        console.log(regExp3.exec(str1));
+        console.log(regExp3.exec(str2));
+        console.log(regExp3.exec(str3));
+        console.log(regExp3.exec(str4));
+
+    </script>
+</body>
+</html>

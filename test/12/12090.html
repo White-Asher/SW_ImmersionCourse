@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{border: 1px solid #000;}
+        #outer{
+            background-color: blue;
+            width:200px;
+            height: 200px;
+        }
+        #inner{
+            background-color: red;
+            width:100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner"></div>    
+    </div>
+
+    <script>
+        const outer = document.querySelector('#outer');
+        const inner = document.querySelector('#inner');
+
+        outer.addEventListener('click',function(){
+            alert('outer');
+        },true);
+        
+        inner.addEventListener('click',function(){
+            alert('inner');
+        },true);
+
+
+    </script>
+</body>
+</html>

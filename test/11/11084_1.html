@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        let telChecker = function(str){
+            if(str.length != 11)
+                return false;
+
+            for(let i =0; i<str.length; i++){
+                let n = new Number(str[i]);
+                if(Number.isNaN(n.valueOf()))
+                    return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
