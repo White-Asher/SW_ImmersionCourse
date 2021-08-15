@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+    <style>
+        .red{color:#ff0000;}
+        .blue{color:#0000ff;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>cirt</h1>
+        <ul>
+            <li id="one" class="red">seoul</li>
+            <li id="two" class="blue">London</li>
+            <li id="three" class="red">Newyork</li>
+            <li id="four">Tokyo</li>
+        </ul>
+    </div>
+    <script>
+        const els =document.getElementsByTagName('li')
+        const elArr = Array.from(els);
+
+        for(let i = 0; i<elArr.length;i++){
+            elArr[i].className = 'blue';
+        }
+
+    </script>
+</body>
+</html>

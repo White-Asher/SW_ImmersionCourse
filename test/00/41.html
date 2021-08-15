@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <style>
+    .filedset{
+          width: 300px;
+      }
+      fieldset + fieldset{
+          margin-top: 30px;
+      }
+      .user-info p lable{
+          display: inline-block;
+          width:80px;
+      }
+      .room-select input:checked + label{
+          color: red;
+          font-weight: bold;
+      }
+  </style>
+    <title>Document</title>
+</head>
+<body>
+    <fieldset class="user-info">
+        <legend>개인 정보</legend>
+        <p>
+            <label for="name">이름</label>
+            <input id="name" type="text">
+        </p>
+        <p>
+            <label for="tel">이름</label>
+            <input id="tel" type="tel">
+        </p>
+    </fieldset>
+    <fieldset class="room-select">
+        <legend>객실 형태</legend>
+        <p>
+            <input id="type1" type="radio" name="room_type" value="1">
+            <label for="type1"></label>
+        </p>
+        <p>
+            <input id="type2" type="radio" name="room_type" value="1">
+            <label for="text"></label>
+        </p>
+    </fieldset>
+</body>
+</html>

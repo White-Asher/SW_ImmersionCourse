@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div{
+            width:200px;
+            height: 200px;
+        }
+        .box{
+            border: 1px solid #000;
+            float: left;
+            margin : 10px
+        }
+
+        .inner{
+            background-color: salmon;
+        }
+        #movex:hover { transform:scaleX(2);}
+        #movey:hover { transform:scaleY(1.5);}
+        #movexy:hover { transform:scale(0.7);}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div id="movex" class="inner"></div>
+    </div>
+    <div class="box">
+        <div id="movey" class="inner"></div>
+    </div>
+    <div class="box">
+        <div id="movexy" class="inner"></div>
+    </div>
+</body>
+</html>
